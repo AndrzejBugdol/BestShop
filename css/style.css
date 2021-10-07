@@ -68,6 +68,12 @@
     border-bottom: 4px solid var(--color-primary)
 }
 /* opening */
+.main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
 .section-opn {
     display: flex;
     flex-flow: column;
@@ -217,6 +223,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-light-grey);
+    width: 100%;
 }
 
 .section-benefit-object {
@@ -369,4 +376,360 @@
     top: 10%;
     left: 0;
     z-index: 2;
+}
+
+.section-pricing {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    width: 1266px;
+}
+.section-pricing-h3 {
+    text-align: center;
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--color-black);
+    margin-bottom: 50px;
+}
+
+.section-pricing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 59px;
+}
+
+.section-pricing-article-std {
+    border-radius: 18px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-pricing-article-mid {
+    box-shadow: 5px 10px 27px #07ACE629;
+    border: 1px solid var(--color-primary);
+    border-radius: 18px;
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-pricing-article-std:nth-child(1) {
+    border: 1px solid var(--color-redish);
+}
+
+.section-pricing-article-std:nth-child(3) {
+    border: 1px solid var(--color-green);
+}
+.section-pricing-head {
+    padding: 34px 141px;
+    margin-bottom: 14px;
+}
+.section-pricing-offer-type {
+    text-align: center;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1px;
+    color: var(--color-black);
+    margin-bottom: 14px;
+}
+.section-pricing-price {
+    text-align: center;
+    font-family: var(--font-open-sans);
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 2px;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+    padding: 37px 0;
+}
+
+.section-pricing-limited {
+    text-align: center;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1px;
+    margin-top: 5px;
+    color: var(--color-black);
+}
+
+.section-pricing-ul {
+    text-align: left;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 41px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
+.section-pricing-box-green::before,
+.section-pricing-box-red::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.section-pricing-box-green::before {
+    background-image: url("../assets/Ckechmark-1.svg")
+}
+
+.section-pricing-box-red::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.section-pricing-button {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    border-radius: 23px;
+    border: none;
+    bottom: -25px;
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 41px;
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-pricing-article-std:nth-child(1) .section-pricing-button {
+    background-color: var(--color-redish);
+}
+
+.section-pricing-article-std:nth-child(1) .section-pricing-price {
+    color: var(--color-redish);
+}
+
+.section-pricing-article-mid .section-pricing-button {
+    background-color: var(--color-primary);
+    bottom: -45px;
+}
+.section-pricing-article-std:nth-child(3) .section-pricing-button {
+    background-color: var(--color-green);
+}
+
+.section-pricing-article-std:nth-child(3) .section-pricing-price {
+    color: var(--color-green);
+}
+
+/*Contact*/
+
+.section-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 100px 100px;
+}
+
+.section-contact-block {
+    width: 50%;
+}
+
+.section-contact-h2 {
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 57px;
+    color: var(--color-black);
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.section-contact-instruction {
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-black);
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.section-contact-item {
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-grey);
+    text-decoration: none;
+    text-align: left;
+}
+.section-contact-details {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.section-contact-item:first-of-type {
+    margin: 0 20px 0 0 ;
+}
+
+.section-contact-item img {
+    margin: 0 20px 0 0 ;
+}
+
+.section-contact-form {
+    display: flex;
+    flex-flow: column;
+}
+
+.section-contact-form-field:first-of-type {
+    margin-bottom: 42px;
+}
+
+.section-contact-form-field:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.section-contact-form-submit {
+    margin-top: 20px;
+}
+.section-contact-form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contact-form-label {
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--color-primary);
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: 3.28px;
+}
+
+.section-contact-form-input{
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    line-height: 43px;
+}
+
+.section-contact-form-checkbox {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.section-contact-form-checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.section-contact-form-checkbox .checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+.section-contact-form-p {
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--color-grey);
+    text-decoration: none;
+    text-align: left;
+}
+.section-contact-form-checkbox input:checked ~ .checkbox {
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/Checkmark.svg);
+}
+
+.section-contact-form-submit {
+    height: 57px;
+    width: 226px;
+    border-radius: 35px;
+    border: none;
+    bottom: -25px;
+    font-family: var(--font-open-sans);
+    box-shadow: 5px 18px 14px #07ACE629;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 41px;
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+}
+
+/*Footer*/
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-logo {
+    font-family: var(--font-raleway);
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 300;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+.footer-text {
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--color-grey);
+    text-decoration: none;
+    text-align: left;
+    margin-top: 6px;
+}
+
+.footer {
+    /*margin-bottom: 17px;*/
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 20px 0;
+}
+.footer-sm-icons {
+    display: flex;
+    gap: 20px;
 }
