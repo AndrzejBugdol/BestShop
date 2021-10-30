@@ -1,0 +1,31 @@
+{
+  "name": "BestShop-Warsztat",
+  "version": "1.0.0",
+  "description": "Warsztat CodersLab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrzejBugdol/BestShop-Warsztat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrzejBugdol/BestShop-Warsztat/issues"
+  },
+  "homepage": "https://github.com/AndrzejBugdol/BestShop-Warsztat#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.43.4"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
