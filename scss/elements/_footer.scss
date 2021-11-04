@@ -1,0 +1,38 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-logo {
+  font-family: ($font-raleway);
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 300;
+  color: ($color-primary);
+  text-decoration: none;
+}
+.footer-text {
+  font-family: ($font-open-sans);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: ($color-grey);
+  text-decoration: none;
+  text-align: left;
+  margin-top: 6px;
+}
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+}
+.footer-sm-icons {
+  margin-right: 5%;
+  display: flex;
+  gap: 20px;
+}

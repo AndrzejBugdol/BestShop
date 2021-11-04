@@ -6,3 +6,18 @@
   width: 100vw;
   margin: 0 auto;
 }
+
+.logo {
+  font-family: $font-raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  color: $color-primary;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,96 @@
+.section__stats {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  &-h2 {
+    margin: 10% 0;
+    text-align: center;
+    font-family: ($font-raleway);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: ($color-black);
+    text-decoration: none;
+    @include mobile {
+      padding: 0 20%;
+    }
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10%;
+    padding: 0 10%;
+    margin-bottom: 121px;
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-object {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(1) {
+      .section__stats-circle {
+        background-color: ($color-redish);
+      }
+      .section__stats-img {
+        top: 3px;
+        left: calc(464px - 434px);
+      }
+    }
+    &:nth-child(2) {
+      .section__stats-circle {
+        background-color: ($color-primary);
+      }
+      .section__stats-img {
+        top: calc(1169px - 1155px);
+        left: calc(790px - 770px);
+      }
+    }
+    &:nth-child(3) {
+      .section__stats-circle {
+        background-color: ($color-green);
+      }
+      .section__stats-img {
+        top: calc(1160px - 1155px);
+        left: calc(1154px - 1122px);
+      }
+    }
+    @include mobile {
+      padding: 5% 0;
+    }
+  }
+  &-circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+  }
+  &-img {
+    position: absolute;
+  }
+  &-number {
+    text-align: center;
+    font-family: ($font-raleway);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: ($color-black);
+    letter-spacing: 5.96px;
+    padding: 13px 20px 19px;
+  }
+  &-desc {
+    text-align: center;
+    font-family: ($font-raleway);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: ($color-grey);
+    padding: 0 10%;
+  }
+}

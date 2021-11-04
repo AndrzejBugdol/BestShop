@@ -1,0 +1,160 @@
+.section__pricing {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  width: 90%;
+
+  &-h3 {
+    text-align: center;
+    font-family: ($font-raleway);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: ($color-black);
+    margin-bottom: 5%;
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-article-std {
+    border-radius: 18px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    @include mobile {
+      margin: 10% 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:nth-child(1) {
+      border: 1px solid ($color-redish);
+      .section__pricing-button {
+        background-color: ($color-redish);
+      }
+      .section__pricing-price {
+        color: ($color-redish);
+      }
+    }
+    &:nth-child(3) {
+      border: 1px solid ($color-green);
+      .section__pricing-button {
+        background-color: ($color-green);
+      }
+      .section__pricing-price {
+        color: ($color-green);
+      }
+    }
+  }
+  &-article-mid {
+    box-shadow: 5px 10px 27px #07ace629;
+    border: 1px solid ($color-primary);
+    border-radius: 18px;
+    padding: 2% 7%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    .section__pricing-button {
+      background-color: ($color-primary);
+      bottom: -45px;
+    }
+  }
+  &-head {
+    padding: 10% 50%;
+    margin-bottom: 5%;
+  }
+  &-offer-type {
+    text-align: center;
+    font-family: ($font-raleway);
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1px;
+    color: ($color-black);
+    margin-bottom: 14px;
+  }
+  &-price {
+    text-align: center;
+    font-family: ($font-open-sans);
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 2px;
+    color: ($color-primary);
+    margin-bottom: 5px;
+    padding: 37px 0;
+  }
+  &-limited {
+    text-align: center;
+    font-family: ($font-raleway);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1px;
+    margin-top: 5px;
+    color: ($color-black);
+  }
+  &-ul {
+    text-align: left;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    font-family: ($font-open-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 41px;
+    color: ($color-black);
+    margin-bottom: 20px;
+  }
+  &-box-green {
+    &::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      display: inline-block;
+      margin-right: 10px;
+      background-image: url("../assets/Ckechmark-1.svg");
+    }
+  }
+  &-box-red {
+    &::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      display: inline-block;
+      margin-right: 10px;
+      background-image: url("../assets/Close.svg");
+    }
+  }
+  &-button {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    border-radius: 23px;
+    border: none;
+    bottom: -25px;
+    font-family: ($font-open-sans);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 41px;
+    color: ($color-white);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
