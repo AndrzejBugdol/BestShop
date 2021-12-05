@@ -8,6 +8,13 @@
 
   h2 {
     text-align: center;
+    font-family: ($font-raleway);
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 57px;
+    color: ($color-black);
+    text-decoration: none;
+    margin-bottom: 22px;
   }
 
   &__columns {
@@ -34,6 +41,7 @@
   &__select .select__input {
     color: $color-grey;
     width: 100%;
+    font-family: ($font-open-sans);
     border-radius: 6px;
     border: 1px solid $color-primary;
     padding: 11px 20px;
@@ -64,7 +72,7 @@
 
       &::after {
         content: "";
-        background-image: url("../assets/Arrow.svg");
+        background-image: url(../assets/Arrow.svg);
         width: 22px;
         height: 22px;
         display: block;
@@ -88,6 +96,7 @@
         font-size: 13px;
         padding: 10px 20px;
         cursor: pointer;
+        font-family: ($font-open-sans);
 
         &:hover {
           background-color: $color-light-grey;
@@ -107,8 +116,49 @@
   }
 
   .form__checkbox {
+    display: flex;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
     .consent__text {
-      padding-top: 4px;
+      font-family: ($font-open-sans);
+      align-self: center;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      margin-left: 3.5em;
+      margin-top: 0.3em;
+      color: ($color-grey);
+      text-decoration: none;
+      text-align: left;
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked {
+        ~ {
+          .checkbox {
+            background-position: center;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-image: url(../assets/Checkmark.svg);
+          }
+        }
+      }
+    }
+    .checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: ($color-white);
+      border: 1px solid ($color-grey);
+      border-radius: 4px;
     }
   }
 
@@ -149,6 +199,7 @@
       .total__price {
         font-size: 1.25rem;
         font-weight: 700;
+        font-family: ($font-open-sans);
       }
     }
 
@@ -162,6 +213,9 @@
           font-weight: 700;
           font-size: 1.125rem;
         }
+      }
+      span {
+        font-family: ($font-open-sans);
       }
     }
   }
